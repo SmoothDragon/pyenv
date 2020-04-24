@@ -1,3 +1,13 @@
+# TGD changes
+
+I prefer using `pyenv` under `zsh`. This modification allows me to get up and running quickly under Ubuntu.
+
+### Modify the makefile to add new options
+
+* `make install_deps`: installs Ubuntu dependencies for `pyenv`.
+* `make install`: Adds `pyenv` configuration to `.zshenv`.
+* `make uninstall`: Removes `pyenv` configuration to `.zshenv`.
+
 # Simple Python Version Management: pyenv
 
 [![Join the chat at https://gitter.im/yyuu/pyenv](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yyuu/pyenv?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)

@@ -23,3 +23,13 @@ test-build:
 
 bats:
 	git clone --depth 1 https://github.com/bats-core/bats-core.git bats
+
+# tgd
+install_dep:
+	sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+
+install:
+	./config_modify.py -a add --json config_zshenv.json
+
+uninstall:
+	./config_modify.py -a delete --json config_zshenv.json
